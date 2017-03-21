@@ -28,7 +28,7 @@ SELECT * FROM "syntax_practice"
 WHERE "account_balance" > 100;
 
 -- 8. Add a new record.
---I chose some arbitrary values to this new record. Skipped user_id since it will auto populate.
+--I chose some arbitrary values for this new record. Skipped user_id since it will auto populate.
 INSERT INTO "syntax_practice"
 ("username", "city", "transactions_completed", "transactions_attempted", "account_balance")
 VALUES ('kitty', 'minneapolis', 0, 0, 0);
@@ -37,6 +37,3 @@ VALUES ('kitty', 'minneapolis', 0, 0, 0);
     Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions. */
 DELETE FROM "syntax_practice"
 WHERE ("city" = 'phoenix' OR city = 'miami') AND "transactions_completed" < 5;
-
-  SELECT * FROM "syntax_practice"
-WHERE "city" = 'phoenix' OR 'miami' AND "transactions_completed" < 5;
